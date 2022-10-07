@@ -1,5 +1,7 @@
 # Algorithm
 
+`B : 백준` `E : 이코테`
+
 |Platform|Date|Algorithm|Title|Level|Link|
 |:--:|:----:|:-----|:---------------|:---:|:--:|
 |B|22/10/3|그리디|문자열 뒤집기|Lv.1|[SOL](https://mature-era-6b1.notion.site/6da1018716e5449b9e3d0576149694b6)|
