@@ -7,4 +7,6 @@
 
 import Foundation
 
-print("Hello World!")
+let solution: B10799 = B10799()
+
+solution.solution()
