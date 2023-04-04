@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		022EC7B029D291D2007DFEA5 /* 10799.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EC7AE29D2792A007DFEA5 /* 10799.swift */; };
+		0228D72429DA8DEA00EE2448 /* B17298.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228D72329DA8DEA00EE2448 /* B17298.swift */; };
 		02A6890C29CDAE0D0029DB7B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6890B29CDAE0D0029DB7B /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,9 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0228D72329DA8DEA00EE2448 /* B17298.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = B17298.swift; sourceTree = "<group>"; };
 		022EC7AE29D2792A007DFEA5 /* 10799.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10799.swift; sourceTree = "<group>"; };
 		02A6890829CDAE0D0029DB7B /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
-		02A6890B29CDAE0D0029DB7B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		02A6890B29CDAE0D0029DB7B /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		02A6891429CDB0050029DB7B /* 1158.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1158.swift; sourceTree = "<group>"; };
 		02A6891529CDB0050029DB7B /* 10845.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 10845.swift; sourceTree = "<group>"; };
 		02A6891629CDB0050029DB7B /* 1406.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1406.swift; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 				02A6891929CDB0050029DB7B /* 10866.swift */,
 				02A6891A29CDB0050029DB7B /* 17413.swift */,
 				022EC7AE29D2792A007DFEA5 /* 10799.swift */,
+				0228D72329DA8DEA00EE2448 /* B17298.swift */,
 			);
 			name = "자료구조1";
 			path = "자료구조1";
@@ -185,7 +187,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					02A6890729CDAE0D0029DB7B = {
 						CreatedOnToolsVersion = 14.2;
@@ -215,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				022EC7B029D291D2007DFEA5 /* 10799.swift in Sources */,
+				0228D72429DA8DEA00EE2448 /* B17298.swift in Sources */,
 				02A6890C29CDAE0D0029DB7B /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +258,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -316,6 +319,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -330,6 +334,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -340,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2QWMDJG53V;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,8 +357,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2QWMDJG53V;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
