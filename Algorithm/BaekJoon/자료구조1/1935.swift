@@ -15,8 +15,7 @@ class B1935 {
       let input = readLine()!
       var num: [Double] = []
       var stack: [Double] = []
-      var value = 0.00
-      
+    
         for _ in 0..<count {
           num.append(Double(readLine()!)!)
         }
