@@ -19,7 +19,7 @@ class B11655 {
           result += String(UnicodeScalar(i.asciiValue! + 13))
         }
       }else if i.isLowercase {
-        if i.asciiValue! > 108 {
+        if i.asciiValue! > 109 {
           result += String(UnicodeScalar(i.asciiValue! - 13))
         }else {
           result += String(UnicodeScalar(i.asciiValue! + 13))
