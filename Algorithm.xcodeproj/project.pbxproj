@@ -14,6 +14,7 @@
 		025F466829DFBD7F00FBEBDC /* 10820.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F466729DFBD7F00FBEBDC /* 10820.swift */; };
 		02A6890C29CDAE0D0029DB7B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6890B29CDAE0D0029DB7B /* main.swift */; };
 		02A9A1B029E502D9006900A9 /* 11656.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A9A1AF29E502D9006900A9 /* 11656.swift */; };
+		02BE207B29F6E7FF00D0FE61 /* 1929.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE207A29F6E7FF00D0FE61 /* 1929.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,7 @@
 		02A6893329CDB4820029DB7B /* 문자열 재정렬.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "문자열 재정렬.swift"; sourceTree = "<group>"; };
 		02A6893429CDB4820029DB7B /* 럭키 스트레이트.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "럭키 스트레이트.swift"; sourceTree = "<group>"; };
 		02A9A1AF29E502D9006900A9 /* 11656.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11656.swift; sourceTree = "<group>"; };
+		02BE207A29F6E7FF00D0FE61 /* 1929.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1929.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		02A6891229CDAE160029DB7B /* BaekJoon */ = {
 			isa = PBXGroup;
 			children = (
+				02BE207C29F6E81400D0FE61 /* 수학1 */,
 				02A6892729CDB3E20029DB7B /* 자료구조1 */,
 			);
 			path = BaekJoon;
@@ -174,6 +177,15 @@
 			path = "2. 구현";
 			sourceTree = "<group>";
 		};
+		02BE207C29F6E81400D0FE61 /* 수학1 */ = {
+			isa = PBXGroup;
+			children = (
+				02BE207A29F6E7FF00D0FE61 /* 1929.swift */,
+			);
+			name = "수학1";
+			path = "수학1";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,6 +246,7 @@
 			files = (
 				0228D72429DA8DEA00EE2448 /* 17298.swift in Sources */,
 				0247B8F429DD6377005C28D8 /* 1935.swift in Sources */,
+				02BE207B29F6E7FF00D0FE61 /* 1929.swift in Sources */,
 				02A9A1B029E502D9006900A9 /* 11656.swift in Sources */,
 				0250440829E1BD28004006BB /* 11655.swift in Sources */,
 				02A6890C29CDAE0D0029DB7B /* main.swift in Sources */,

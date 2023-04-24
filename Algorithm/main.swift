@@ -7,6 +7,6 @@
 
 import Foundation
 
-let solution: B11656 = B11656()
+let solution: B1929 = B1929()
 
 solution.solution()
