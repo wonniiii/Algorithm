@@ -7,6 +7,6 @@
 
 import Foundation
 
-let solution: 피자나눠먹기2 = 피자나눠먹기2()
-print(solution.solution(4))
+let solution: B1620 = B1620()
+print(solution.solution())
 
