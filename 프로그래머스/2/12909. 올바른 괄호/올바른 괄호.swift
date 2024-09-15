@@ -2,18 +2,17 @@ import Foundation
 
 func solution(_ s:String) -> Bool
 {
-    var count: Int = 0
+    var ans:Bool = false
+    var arr = s.map{String($0)}
+    var count = 0
     
-    for i in s {
+    for i in arr {
+        i == "(" ? (count+=1) : (count-=1)
         if count < 0 {
-            return false
-        }
-        if i == "(" {
-            count += 1
-        } else {
-            count -= 1
-        }
+            ans = false
+            break
+        } 
     }
-    return count == 0 ? true : false
-
+     if count == 0 {ans = true} else {ans = false}
+    return ans
 }
