@@ -1,19 +1,24 @@
+
 def solution(N, stages):
     answer = []
-    res = []
-
-    for i in range(1,N+1):
-        a,b = 0,0
-        for j in stages:
-            if i == j : a += 1
-            if i <= j : b += 1
-        if a == 0 or b == 0: 
-                res.append((i,0))
-        else:
-            res.append((i,a/b))
-            
-    res.sort(key=lambda x: -x[1])
+    result = []
+    people = len(stages)
+    check = [0]*(N+2)
+    clear = 0
     
-    answer = list(zip(*res))[0]
-        
-    return answer
+    for i in stages:
+        check[i] += 1
+    
+    for i in range(1,N+1):
+        clear += check[i-1]
+        remain = people - clear
+        if remain > 0:
+            answer.append([i,check[i]/remain])
+        else:
+            answer.append([i,0.0])
+    
+    answer.sort(key=lambda x: -x[1])
+    for i in answer:
+        result.append(i[0])
+    
+    return result
