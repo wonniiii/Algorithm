@@ -1,10 +1,17 @@
 def solution(s):
-    stack = []
-
-    for char in s:
-        stack.append(char)
-        if len(stack) > 1 and stack[-1] == stack[-2]:
+    stack = [s[0]]
+    answer = 0
+    
+    for i in range(1,len(s)):
+        if stack and s[i] == stack[-1]:
             stack.pop()
-            stack.pop()
-
-    return 1 if len(stack) == 0 else 0
+        else:
+            stack.append(s[i])
+    
+    if not stack:
+        answer = 1
+    else:
+        answer = 0
+        
+    return answer
+        
