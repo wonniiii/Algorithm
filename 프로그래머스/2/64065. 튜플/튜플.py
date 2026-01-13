@@ -1,10 +1,7 @@
-import re
 from collections import Counter
+import re
 
 def solution(s):
-    numbers = list(map(int, re.findall(r'\d+', s)))
-
-    counter = Counter(numbers)
-
-    result = [num for num, _ in counter.most_common()]
-    return result
+    nums = list(map(int, re.findall(r'\d+', s)))
+    cnt = Counter(nums)
+    return [num for num, _ in cnt.most_common()]
