@@ -1,31 +1,20 @@
-from collections import deque
-
 def solution(s):
-    if len(s) % 2 != 0:
-        return 0
-    
-    pairs = {')':'(', ']':'[', '}':'{'}
-    q = deque(s)
     answer = 0
-    
-    for _ in range(len(s)):
-        valid = True
+    def is_vaild(s):
         stack = []
+        pair = {')' : '(', ']': '[','}':'{'}
         
-        for ch in q:
-            if ch in '([{':
+        for ch in s:
+            if ch in "{([":
                 stack.append(ch)
             else:
-                if not stack or stack[-1] != pairs[ch]:
-                    valid = False
-                    break  
+                if not stack or stack[-1] != pair[ch]:
+                    return False
                 stack.pop()
-                
-        if valid and not stack:
+        return not stack
+    
+    for _ in range(len(s)):
+        if is_vaild(s):
             answer += 1
-            
-        q.append(q.popleft())
-    
+        s = s[1:] + s[0]
     return answer
-    
-    
