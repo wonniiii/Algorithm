@@ -1,10 +1,10 @@
 # [level 1] 모의고사 - 42840 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42840?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42840?gad_source=1&gad_campaignid=22681436564&gbraid=0AAAAAC_c4nBSfBgC5GOFOD4nK7XDD4mJn&gclid=CjwKCAiAybfLBhAjEiwAI0mBBva0I19eNW8rUmHzoBrZG7L-gYFLU3uy_z8tpT99NQaHvKIm0W2wyxoCTQoQAvD_BwE) 
 
 ### 성능 요약
 
-메모리: 9.27 MB, 시간: 3.51 ms
+메모리: 9.43 MB, 시간: 3.53 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 08월 12일 11:06:12
+2026년 01월 19일 17:30:38
 
 ### 문제 설명
 
