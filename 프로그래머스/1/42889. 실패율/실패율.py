@@ -1,24 +1,21 @@
-
 def solution(N, stages):
-    answer = []
-    result = []
-    people = len(stages)
-    check = [0]*(N+2)
-    clear = 0
-    
+
+    count = [0] * (N+2)
+    answer = [0] * N
+
     for i in stages:
-        check[i] += 1
-    
-    for i in range(1,N+1):
-        clear += check[i-1]
-        remain = people - clear
-        if remain > 0:
-            answer.append([i,check[i]/remain])
+        count[i] += 1
+
+    remaining = len(stages)
+    for i in range(N):
+        stage = i + 1
+        if remaining == 0:
+            answer[i] = 0
         else:
-            answer.append([i,0.0])
-    
-    answer.sort(key=lambda x: -x[1])
-    for i in answer:
-        result.append(i[0])
-    
-    return result
+            answer[i] = count[stage] / remaining
+        remaining -= count[stage]
+
+    sorted_answer = sorted(enumerate(answer, start = 1), key = lambda x: (-x[1], x[0]))
+
+
+    return [stage for stage, _ in sorted_answer]
