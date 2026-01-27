@@ -1,25 +1,27 @@
-
 def solution(dirs):
-    move = {
-        'U': (0,1),
-        'D': (0,-1),
-        'L': (-1,0),
-        'R': (1,0)
-    }
-    
-    x,y = 0,0
+    x, y = 0, 0
     visited = set()
-    
+    move = {
+        'U':(0,-1),
+        'D':(0,1),
+        'R':(1,0),
+        'L':(-1,0)
+    }
+
     for d in dirs:
         dx, dy = move[d]
-        nx, ny = dx+x, dy+y
-        
-        if not (-5 <= nx <= 5 and -5 <= ny <= 5):
+        nx, ny = x+dx, y+dy
+
+        if nx < -5 or nx > 5 or ny < -5 or ny > 5:
             continue
-        
-        edge = tuple(sorted([(x, y), (nx, ny)]))
-        visited.add(edge)
-        
+
+        path1 = (nx, ny, x, y)
+        path2 = (x, y, nx, ny)
+
+        if path2 not in visited:
+            visited.add(path1)
+            visited.add(path2)
+
         x, y = nx, ny
-    
-    return len(visited)
+
+    return len(visited) // 2
