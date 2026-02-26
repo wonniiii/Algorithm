@@ -1,8 +1,22 @@
-def solution(strs, t):
-    INF = 99999
-    dp = [INF] * len(t) + [0]
-    for i in range(len(t)-1, -1, -1):
-        for j in range(1, min(6, len(t)-i+1)):
-            if t[i:i+j] in strs:
-                dp[i] = min(dp[i], dp[i+j]+1)
-    return -1 if dp[0]==INF else dp[0]
+def solution(strs, t): 
+    INF = 10**9 
+    n = len(t)
+
+    sset = [set() for _ in range(6)]
+    for words in strs:
+        sset[len(words)].add(words)
+
+    dp = [INF] * (n+1)
+    dp[0] = 0
+
+    for i in range(1, n+1):
+        for L in range(1,6):
+            if i < L:
+                break
+            if dp[i-L] == INF:
+                continue
+            if t[i-L:i] in sset[L]:
+                dp[i] = min(dp[i], dp[i-L] + 1)
+
+
+    return -1 if dp[n]==INF else dp[n]
